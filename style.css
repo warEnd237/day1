@@ -6,6 +6,7 @@
 
 body{
     font-family:'Muli', sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     margin: 0;
     justify-content: center;
@@ -16,7 +17,7 @@ body{
 
 .container{
     display: flex;
-    width: 90vw;
+    width: 98vw;
 }
 
 .panel{
