@@ -1,13 +1,14 @@
-document.addEventListener('DOMContentLoaded', ()=> {
-    const images = document.querySelectorAll('.image');
-    images.forEach(image => {
-        image.addEventListener('click', () => {
-            images.forEach(img => {
-                img.classList.remove('enlarged');
-            });
+const panels = document.querySelectorAll('.panel');
 
-            image.classList.add('enlarged');
-        });
+panels.forEach((panel) => {
+    panel.addEventListener('click', () => {
+        removeActivesClasses()
+        panel.classList.add('active');
     });
+})
 
-});
+function removeActivesClasses() {
+    panels.forEach((panel) => {
+        panel.classList.remove('active');
+    })
+}
